@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* stilizzazione aside */
+
+aside {
+    width: 200px;
+    height: calc(100vh - 70px);
+    background-color: #040404;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* stilizzazione header */
+
+header {
+    height: 70px;
+    width: calc(100vw - 200px);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+/* stilizzazione main */
+
+main {
+    height: calc(100vh - 70px);
+    width: calc(100vw - 200px);
+    background-color: #121212;
+    margin-left: 200px;
+    overflow-y: auto;
+}
+
+/* stilizzazione player */
+
+.player {
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #282828;
+}
