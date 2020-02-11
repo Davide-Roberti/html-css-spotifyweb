@@ -34,6 +34,8 @@ aside img {
 aside a {
     text-decoration: none;
     color: #b4b4b4;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .aside-menu i {
@@ -44,6 +46,7 @@ aside a {
 
 .aside-menu li {
     padding: 7px 20px;
+    border-left: 2px solid #040404;
 }
 
 .aside-menu li:first-child {
@@ -54,8 +57,70 @@ aside a {
     color: white;
 }
 
-.aside-menu a:hover {
+aside a:hover {
     color: white;
+}
+
+.playlist {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.playlist h4 {
+    color: white;
+}
+
+.playlist p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.playlist p a {
+    font-size: 17px;
+}
+
+.playlist a i {
+    color: #040404;
+    background-color: #b4b4b4;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.playlist a:hover i {
+    background-color: white;
+}
+
+.playlist ul {
+    list-style: none;
+}
+
+.playlist li {
+    line-height: 30px;
+}
+
+aside .appendice {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+aside hr {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #b4b4b4;
+}
+
+aside .appendice i {
+    margin-right: 5px;
+}
+
+aside .appendice .profilo a {
+    color: white;
+}
+
+aside .appendice .profilo i {
+    font-size: 20px;
+    color: #b4b4b4;
 }
 
 
