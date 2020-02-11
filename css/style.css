@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .clearfix:after {
@@ -23,7 +23,42 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
+    color: #b4b4b4;
 }
+
+aside img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+.aside-menu i {
+    font-size: 23px;
+    transform: translateY(2px);
+    padding-right: 7px;
+}
+
+.aside-menu li {
+    padding: 7px 20px;
+}
+
+.aside-menu li:first-child {
+    border-left: 2px solid #cddc39;
+}
+
+.aside-menu a.home {
+    color: white;
+}
+
+.aside-menu a:hover {
+    color: white;
+}
+
+
 
 /* stilizzazione header */
 
