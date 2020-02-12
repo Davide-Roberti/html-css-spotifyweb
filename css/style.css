@@ -100,7 +100,8 @@ aside a:hover {
 
 aside .appendice {
   padding-left: 20px;
-  margin-top: 30px;
+  position: relative;
+  top: 30px;
 }
 
 aside hr {
@@ -233,7 +234,44 @@ main .immagini-tonde img {
     border-radius: 50%;
 }
 
+.card .immagine-card {
+    position: relative;
+    height: 170px;
+}
 
+.card .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.immagine-card i {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card .immagine-card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card .immagine-card:hover i {
+    display: block;
+}
+
+.card .rounded {
+    border-radius: 50%;
+}
+
+.card .rounded .overlay {
+    border-radius: 50%;
+}
 /* stilizzazione player */
 
 .flex-player {
@@ -246,6 +284,10 @@ main .immagini-tonde img {
     justify-content: space-between;
     align-items: center;
     color: white;
+}
+
+.flex-player i {
+    font-size: 12px;
 }
 
 .flex-player i:hover {
@@ -333,6 +375,6 @@ main .immagini-tonde img {
     padding: 5px;
 }
 
-.fa-play-circle {
-    font-size: 25px;
+.flex-player i.fa-play-circle {
+    font-size: 20px;
 }
