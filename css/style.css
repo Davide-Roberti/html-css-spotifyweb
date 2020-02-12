@@ -245,20 +245,44 @@ main .immagini-tonde img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+}
+
+.flex-player i:hover {
+    transform: scale(1.2);
 }
 
 .flex-album-attuale {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .flex-album-attuale img {
     width: 50px;
+    margin-right: 10px;
+}
+
+.flex-album-attuale .brano {
+    margin-right: 10px;
+}
+
+.flex-album-attuale p {
+    color: #b4b4b4;
+}
+
+.flex-album-attuale .icone-brano {
+    color: #b4b4b4;
+}
+
+.flex-album-attuale .icone-brano i:hover {
+    color: white;
 }
 
 .flex-volume {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .volumebar-full {
@@ -286,6 +310,8 @@ main .immagini-tonde img {
 
 .flex-playbar-full-empty {
     display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .playbar-full {
@@ -296,4 +322,17 @@ main .immagini-tonde img {
 .playbar-empty {
     width: 170px;
     border: 2px solid grey;
+}
+
+.flex-player span,
+.flex-player p {
+    font-size: 12px;
+}
+
+.flex-player i {
+    padding: 5px;
+}
+
+.fa-play-circle {
+    font-size: 25px;
 }
