@@ -236,10 +236,64 @@ main .immagini-tonde img {
 
 /* stilizzazione player */
 
-.player {
+.flex-player {
     height: 70px;
     width: 100vw;
     position: fixed;
     bottom: 0;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-album-attuale {
+    display: flex;
+    align-items: center;
+}
+
+.flex-album-attuale img {
+    width: 50px;
+}
+
+.flex-volume {
+    display: flex;
+    align-items: center;
+}
+
+.volumebar-full {
+    width: 30px;
+    border: 2px solid lightgrey;
+}
+
+.volumebar-empty {
+    width: 50px;
+    border: 2px solid grey;
+}
+
+.flex-volumebar {
+    display: flex;
+}
+
+.barraplayer {
+    text-align: center;
+}
+
+.flex-playbar {
+    display: flex;
+    align-items: center;
+}
+
+.flex-playbar-full-empty {
+    display: flex;
+}
+
+.playbar-full {
+    width: 100px;
+    border: 2px solid lightgrey;
+}
+
+.playbar-empty {
+    width: 170px;
+    border: 2px solid grey;
 }
