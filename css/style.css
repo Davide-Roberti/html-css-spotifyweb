@@ -29,6 +29,10 @@ aside {
     justify-content: space-between;
 }
 
+aside ul {
+    list-style: none;
+}
+
 aside img {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -39,6 +43,14 @@ aside a {
     color: #b4b4b4;
     font-size: 14px;
     font-weight: 600;
+}
+
+aside .icone-mobile {
+    display: none;
+}
+
+aside .icone-appendice-mobile {
+    display: none;
 }
 
 .aside-menu i {
@@ -140,6 +152,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999;
 }
 
 header button {
@@ -187,7 +200,7 @@ main .flex-menu {
     display: flex;
     margin-top: 90px;
     justify-content: center;
-    flex-wrap: wrap;
+
 }
 
 main .flex-menu a {
@@ -196,6 +209,10 @@ main .flex-menu a {
     color: #b4b4b4;
     font-weight: 600;
     font-size: 14px;
+}
+
+main .flex-menu ul {
+    text-align: center;
 }
 
 main a:hover {
@@ -379,4 +396,81 @@ main .immagini-tonde img {
 
 .flex-player i.fa-play-circle {
     font-size: 20px;
+}
+
+/* media query */
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 50px;
+        align-items: center;
+    }
+
+    aside .icone-mobile {
+        display: block;
+    }
+
+    .icone-mobile i {
+        font-size: 23px;
+        padding: 5px 0;
+    }
+
+    .icone-mobile a.home {
+        color: white;
+    }
+
+    aside .icone-appendice-mobile {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    aside .icone-appendice-mobile .profilo i {
+        font-size: 23px;
+        margin-top: 10px;
+    }
+
+    aside .icone-mobile li.spotifylogo i {
+        color: white;
+        font-size: 27px;
+        margin-bottom: 5px;
+    }
+
+
+    /* oggetti nascosti visualizzazione mobile */
+
+
+    aside .playlist {
+        display: none;
+    }
+
+    aside .parte-superiore-aside {
+        display: none;
+    }
+
+    aside .appendice {
+        display: none;
+    }
+
+    /* fine oggetti nascosti versione mobile */
+
+
+
+    main {
+        width: calc(100vw - 50px);
+        margin-left: 50px;
+    }
+
+    main .flex-menu a {
+        font-size: 12px;
+    }
+
+    main h2 {
+        font-size: 23px;
+    }
+
+    header {
+        width: calc(100vw - 50px);
+        margin-left: 50px;
+    }
 }
