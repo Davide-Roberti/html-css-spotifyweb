@@ -232,8 +232,8 @@ main .flex-elenco {
 
 main .card {
     text-align: center;
-    width: 170px;
     margin: 8px;
+    flex: 1 1 170px;
 }
 
 main .card img {
