@@ -233,7 +233,6 @@ main .flex-elenco {
 main .card {
     text-align: center;
     margin: 8px;
-    flex: 1 1 170px;
 }
 
 main .card img {
@@ -400,7 +399,7 @@ main .immagini-tonde img {
 
 /* media query */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:  767px) {
     aside {
         width: 50px;
         align-items: center;
